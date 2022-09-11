@@ -1,2 +1,2 @@
 # Java-Exercise
- ***Basic Java programs for practice✌️***
+ ***Basic Java programs for practice 😊✌️***
