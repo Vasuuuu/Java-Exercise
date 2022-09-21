@@ -58,6 +58,6 @@ class Stack
         stack.push(5);
         stack.push(6);
         stack.peek();
-        
+        System.out.println("Final top : "+stack.top);
     }
 }
