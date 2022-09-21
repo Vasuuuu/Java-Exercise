@@ -1,7 +1,5 @@
-import java.util.Arrays;
 class Stack
 {
-    int max;
     int size;
     int top = -1;
     int[] stack;
@@ -28,17 +26,16 @@ class Stack
             
         }
     }
-    int peek(){
+    void peek(){
         if(isEmpty()){
             System.out.println("Stack Underflow.");
-            return 0;
         }else{
-            return stack[top];
+            System.out.println("Top of stack : " +stack[top]);
         }
     }
     void display(){
         
-      for(int i=top;i>-1;i--){
+      for(int i=0;i<=top;i++){
           System.out.print(stack[i]+" ");
       }
       System.out.println();
@@ -46,7 +43,11 @@ class Stack
     public static void main(String[] args)
     {
         Stack stack = new Stack(5);
-       stack.push(1);
+        System.out.println("Size of stack : "+stack.size);
+        System.out.println("Initial top : "+stack.top);
+        System.out.println("Stack is empty : "+stack.isEmpty());
+        stack.peek();
+        stack.push(1);
         stack.push(2);
         stack.push(3);
         stack.push(4);
