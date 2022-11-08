@@ -33,7 +33,7 @@ class Result extends Test implements sports{
         total = sub1 + sub2 +spmarks;
         showRoll();
         showMarks();
-        showSpMarks;
+        showSpMarks();
         System.out.println("Total = "+total);
     }
 }
